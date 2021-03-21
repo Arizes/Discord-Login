@@ -12,7 +12,6 @@
 
 async function createSnowflake() {
      
-    // Simple system to prevent duplicate ID's
     let workerNum = 1;
     let processNum = 1;
     let incrementNum = 1;
