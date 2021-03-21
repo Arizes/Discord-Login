@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link href="./assets/images/background.png" rel="icon">
+		<title>Login Page</title>
+		<link href="./assets/style.css" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/whitney-2" rel="stylesheet">
+	</head>
+	<body>
+		<div class="background"></div>
+		<div>
+			<div class="loginForm">
+				<span class="WhiteText">Welcome back!</span>
+				<span class="greyText">We're so excited to see you again!</span>
+				<form class="inputFields" id="form" autocomplete="off">
+					<div id="updateFields">
+						<div class="UsernameInput">
+							<label for="username" class="inputPlaceholder">USERNAME</label><span class="errorMessage" id="errorMessage"></span>
+							<input suggested="false" type="text" class="inputField" id="usernameField" name="username" spellcheck="false">
+						</div>
+						<div class="PasswordInput">
+							<label for="password" class="inputPlaceholder">PASSWORD</label><span class="errorMessage" id="errorMessage"></span>
+							<input type="password" class="inputField" id="passwordField" name="password" spellcheck="false">
+						</div>
+					</div>
+					<button class="blurpleButton loginButton" onclick="loginUser(username.value, password.value)" type="submit" id="submitButton">Login</button>
+					<div class="smallText">
+						<span class="lightText">Need an account?</span>
+						<span class="linkText" onclick="defaultAccount()">Use a default one</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
