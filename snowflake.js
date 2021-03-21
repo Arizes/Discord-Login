@@ -73,9 +73,4 @@ async function convertSnowflake(id) {
     return ( (id/4139304) + 1609459200000 );
 };
 
-async function a() {
-    console.log(await createSnowflake(1));
-};
-a()
-
 module.exports = { createSnowflake, convertSnowflake }
